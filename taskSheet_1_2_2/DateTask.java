@@ -1,11 +1,11 @@
 package taskSheet_1_2_2;
 
-
 public class DateTask {
     // instance variables
     private byte day;
     private byte month;
     private short year;
+
     // Constructors:
 
     // The no-args constructor
