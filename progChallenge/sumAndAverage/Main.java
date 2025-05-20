@@ -6,8 +6,6 @@ public class Main {
         int[] arr = {1,2,3,4,5,6};
         System.out.println("SUM:    " + m.sum(arr));
         System.out.println("AVG:    " + m.avg(m.sum(arr), arr.length));
-        System.out.println(args);
-        
     }
 }
 
