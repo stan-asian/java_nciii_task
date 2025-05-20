@@ -1,0 +1,7 @@
+KEY TAKE AWAYS IN TASKSHEET_12:
+
+1** Default cannot be accessed by another class in other package (Same Package)
+2** Protected cannot be accessed by another class in other package (Same Package)
+3** Public can be accessed anywhere
+4** Any methods that are define in the Type Animal can be used
+5** Non static (child), Static (parent) //this one was allowed but it is called Method Hiding, not Overriding

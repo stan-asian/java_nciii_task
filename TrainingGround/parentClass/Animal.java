@@ -2,12 +2,13 @@ package TrainingGround.parentClass;
 
 public class Animal {
 
-    boolean canWalk, canSwim, canFly;
+    boolean canWalk, canSwim, canFly, canBark;
 
-    public Animal(boolean canWalk, boolean canSwim, boolean canFly){
+    public Animal(boolean canWalk, boolean canSwim, boolean canFly, boolean canBark){
         this.canWalk = canWalk;
         this.canSwim = canSwim;
         this.canFly = canFly;
+        this.canBark = canBark;
     }
 
     public void canFly(){
@@ -34,6 +35,15 @@ public class Animal {
         }
         else{
             System.out.println("This animal cannot Walk");
+        }
+    }
+
+    public void canBark(){
+        if(this.canBark){
+            System.out.println("This animal can Bark");
+        }
+        else{
+            System.out.println("This animal cannot Bark");
         }
     }
 }
