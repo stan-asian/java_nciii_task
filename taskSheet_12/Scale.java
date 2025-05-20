@@ -21,7 +21,7 @@ public class Scale {
     }
 }
 
-// SUB-CLASS
+// TOP-LEVEL CLASS
 class Point implements PointMethods{
     private double x, y;
 
