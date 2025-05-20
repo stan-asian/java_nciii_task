@@ -6,8 +6,13 @@ public class Operation{
         Scanner scan = new Scanner(System.in);
         Operation operation = new Operation();
 
-        System.out.println("Enter Operation: ");
-        String sign = scan.nextLine();
+        System.out.println("Enter Number of the Corresponding Operation.");
+        System.out.println("1: ADDITION");
+        System.out.println("2: SUBTRACTION");
+        System.out.println("3: MULTIPLICATION");
+        System.out.println("4: DIVISION");
+        System.out.print("ENTER A NUMBER HERE (1-4): ");
+        int sign = scan.nextInt();
 
         System.out.println("Enter First Num: ");
         int num1 = scan.nextInt();
@@ -22,20 +27,20 @@ public class Operation{
         
 
         switch (sign) {
-            case "add":
-                System.out.print("ADDITION: " + add);
+            case 1:
+                System.out.println("Answer Using Addition: " + add);
                 break;
         
-            case "subtract":
-                System.out.print("SUBTRACTION: " + subtract);
+            case 2:
+                System.out.println("Answer Using Subtraction: " + subtract);
                 break;
         
-            case "multiply":
-                System.out.print("MULTIPLY: " + multiply);
+            case 3:
+                System.out.println("Answer Using Multiplication: " + multiply);
                 break;
         
-            case "divide":
-                System.out.println("DIVIDE: " + divide);
+            case 4:
+                System.out.println("Answer Using Division: " + divide);
                 break;
         }
     }   
