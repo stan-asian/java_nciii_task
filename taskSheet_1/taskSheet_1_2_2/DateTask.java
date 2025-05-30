@@ -12,7 +12,7 @@ public class DateTask {
     public DateTask() {
         this(1, 1, 1);
     }
-    
+
     // Constructor that takes 3 arguments
     public DateTask(int m, int d, int y) {
         setDate(m, d, y);
@@ -28,8 +28,7 @@ public class DateTask {
             day = (byte) d;
             year = (short) y;
             month = (byte) m;
-        }
-        else{
+        } else {
             day = (byte) 0;
             year = (short) 0;
             month = (byte) 0;
@@ -47,15 +46,15 @@ public class DateTask {
         return this.day;
     }
 
-    //Mekus Mekus  
-    public int returner(){
+    // Mekus Mekus
+    public int returner() {
         return 0;
     }
 
     public void setDay(int day) {
         if (valid(day, this.month, this.year)) {
             this.day = (byte) day;
-        }else{
+        } else {
             returner();
         }
     }
@@ -64,37 +63,31 @@ public class DateTask {
         return this.month;
     }
 
-
     public void setMonth(int month) {
         if (valid(day, month, year)) {
             this.month = (byte) month;
-        }
-        else{
+        } else {
             this.month = (byte) 0;
             returner();
         }
     }
 
-
     public int getYear() {
         return this.year;
     }
 
-
     public void setYear(int year) {
         if (valid(day, month, year)) {
             this.year = (short) year;
-        }
-        else{
+        } else {
             this.year = (short) 0;
             returner();
         }
     }
 
-
     private boolean valid(int day, int month, int year) {
-        if (day > 31 || day < 1 || month > 12 || month < 1 || year < 1)  {
-            System.out.println("Attempting to create a non-valid date " +month + "/" + day + "/" + year);
+        if (day > 31 || day < 1 || month > 12 || month < 1 || year < 1) {
+            System.out.println("Attempting to create a non-valid date " + month + "/" + day + "/" + year);
             return false;
         }
         switch (month) {
