@@ -9,6 +9,9 @@ public class taskSheet2 {
         String e = "rld";
         String f = "2.0";
         boolean g = true;
-        System.out.println(a + String.valueOf(c) + " " + b + String.valueOf(d) + e + " " + f + " " + g);
+
+        String output = a + String.valueOf(c) + " " + b + String.valueOf(d) + e + " " + f + " " + g;
+        
+        System.out.println(output);
     }
 }
