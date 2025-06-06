@@ -12,22 +12,24 @@ public class taskSheet14 {
     }
 }
 
-abstract class abstractClass{
+abstract class abstractClass {
     abstract void abstractMethod();
-    String sayHello(String name){
+
+    String sayHello(String name) {
         return "Hello " + name;
     }
 }
 
-class A extends abstractClass{
+class A extends abstractClass {
     @Override
-    void abstractMethod(){
+    void abstractMethod() {
         System.out.println("A's implementation of abstract method!");
     }
 }
-class B extends abstractClass{
+
+class B extends abstractClass {
     @Override
-    void abstractMethod(){
+    void abstractMethod() {
         System.out.println("B's implementation of abstract method!");
     }
 }
